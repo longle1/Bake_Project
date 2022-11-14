@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #F1F1F1;
+}
+.full-pages{
+    background-color: #F1F1F1;
+    max-width: 1400px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+/* lam trang ben phai */
+.right-page{
+    width: 69%;
+    background-color: #F1F1F1;
+    padding: 0px 10px;
+}
+hr{
+    margin: 20px 0px;
+    border: 1px solid #eee;
+}
+h2{
+    color: #757575;
+    padding: 16px 16px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+}
+h2 > .fas{
+    color: #009688;
+    margin: 0px 5px;
+} 
+h5{
+    margin: 10px 0px;
+    font-size: 20px;
+    color: #666666;
+    opacity: 0.6;
+}
+h6 > span{
+    height: 25px;
+    width: 60px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    background-color: #009688;
+    font-weight: 300;
+}
+h6{
+    margin: 16px 0px;
+    color: #009688;
+    font-size: 15px;
+    font-weight: 300;
+}
+.right-page p{
+    margin: 18px 0px;
+}
+.container{
+    padding: 3px 16px;
+}
+
+.first-page{
+    max-height: 540px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px #D9D9D9;
+    margin-bottom: 20px;
+}
+.last-page{
+    max-height: auto;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px #D9D9D9;
+}
+/* lam trang ben trai */
+.left-page{
+    width: 30%;
+    max-height: auto;
+    background-color: #fff;
+    margin: 0px 10px;
+    box-shadow: 4px 4px 10px #D9D9D9;
+}
+h1{
+    font-weight: 300;
+}
+.about-her{
+    padding: 0px 20px;
+}
+.p{
+    margin: 15px 0px;
+}
+.if-personal{
+    position: relative;
+}
+.if-personal > h1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px 20px;
+}
+.left-page p {
+    margin: 16px 0px;
+    color: #75758B;
+}
+p > .fas{
+    color: #009688;
+    margin-right: 15px;
+}
+.languages-skill > h3{
+    margin: 25px 0px;
+    color: #757575;
+}
+.languages-skill > h3 > .fas{
+    margin-right: 15px;
+    color: #009688;
+
+}
+.light-gray{
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    width: 100%;
+}
+.adobe-Photoshop{
+    width: 90%;
+}
+.Photography{
+    width: 80%;
+}
+.illustrator{
+    width: 75%;
+}
+.media{
+    width: 50%;
+}
+.nav {
+    background-color: #009688;
+    border-radius: 10px;
+}
+.languages-skill  span {
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.empty{
+    content: ' ';
+}
+.english,.spanish,.german{
+    height: 24px;
+    background-color: #009688;
+    border-radius: 10px;
+}
+.english{
+    width: 100%;
+}
+.spanish {
+    width: 50%;
+}
+.german{
+    width: 30%;
+    margin-bottom: 20px;
+}
+footer{
+    margin-top: 20px;
+    max-width: 100%;
+    background-color: #009688;
+}
+footer > div{
+    display: flex;
+    justify-content: center;
+    padding: 3px 0px;
+}
+footer > p{
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0px;
+    margin: 0;
+} 
+footer > p > a{
+    color: #fff;
+}
+footer > div > .fab,
+footer > div > .far {
+    padding: 0px 1px;
+    color: #fff;
+}

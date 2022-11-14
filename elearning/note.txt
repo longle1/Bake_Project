@@ -1,0 +1,7 @@
+- Base: đây là folder chứa các file định dạng code, chỉnh sửa code của thư viện
+- Helpers: đây là folder chứa các file code đầu tiên cho toàn bộ dự án
+- Components: định nghĩa các thành phần nhỏ trong trang web (button, ...)
+- Layouts: chứa các thành phần trang web (header, carousel, ...)
+- Pages: chứa các trang 
+- Theme: chứa các theme cho trang web
+- Vendors: chứa code của các thư viện

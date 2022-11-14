@@ -1,0 +1,23 @@
+
+.categories {
+    margin-top: $fs-4 - 4;
+    .categories__content {
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            font-size: $fs-5;
+        }
+        .categories__items {
+            padding: $pd-0 + 5;
+            font-size: $fs-0;
+            border: 1px solid $color-black-1;
+            margin-bottom: $mg-0 * 3;
+            i.fa {
+                font-weight: $fw-2 + 200;
+            }
+            &:hover {
+                box-shadow: 0 0 1px 1px $color-black-1, 0 3px 1px 0 $color-black-1;
+            }
+        }
+    }
+}

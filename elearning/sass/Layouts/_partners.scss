@@ -1,0 +1,12 @@
+.partners {
+    background-color: $color-white-cream;
+    padding: $pd-2 * 4 0;
+    .partners__content {
+        width: 70%;
+        margin: 0 auto;
+        .partners__imgs {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

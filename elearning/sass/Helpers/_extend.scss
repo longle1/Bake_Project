@@ -1,0 +1,11 @@
+.backgroundImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+//Dấu "%" giúp không biên dịch code gọi là PlaceHolder
+%backgroundImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

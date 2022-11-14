@@ -1,0 +1,85 @@
+.myNavBar {
+    box-shadow: 0 0 1px 1px rgb(20 23 28 / 10%), 0 3px 1px 0 rgb(20 23 28 / 10%);
+    .myNavBar__left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .navbar-brand {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+            img {
+                width: 110px;
+            }
+        }
+        .myNavBar__categories {
+            flex-grow: 1;
+            text-align: center;
+            cursor: pointer;
+            @include styleText($color-black-light, $fs-1, $fw-0);
+        }
+        .myNavBar__form-search {
+            flex-grow: 8;
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-2, $color-red-0, $color-white-0)
+        }
+    }
+    .myNavBar__right {
+        .navbar-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-item {
+                position: relative;
+                border-radius: $border-radius-0 + 1;
+                padding: $pd-2 + 2 $pd-2;
+                .nav-link {
+                    @include styleText($color-black-light, $fs-1, $fw-0);
+                }
+                &:hover {
+                    background-color: $color-gray-1;
+                    z-index: 100;
+                    .overlay {
+                        display: block !important;
+                        position: absolute;
+                        background-color: $color-white-0;
+                        width: 330px;
+                        padding: $pd-0 * 2;
+                        text-align: center;
+                        border-top: 1px solid $color-gray-1;
+                        right: 0;
+                        top: 60px;
+                        box-shadow: 0 4px 16px $color-black-3;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 15px;
+                            width: 15px;
+                            display: block;
+                            top: -8px;
+                            background-color: $color-white-0;
+                            right: 9%;
+                            transform: rotate(45deg);
+                            border-top: 1px solid $color-gray-1;
+                            border-left: 1px solid $color-gray-1;
+                        }
+                    }
+                }
+            }
+            .myNavBar__cart {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 20px;
+                .nav-link {
+                    font-size: $fs-2 / 2;
+                }
+            }
+            .myNavBar__buttons {
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}

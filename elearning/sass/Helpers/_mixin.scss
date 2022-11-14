@@ -1,0 +1,74 @@
+// Không có tham số (no use)
+// @mixin styleText {
+//     color: white;
+//     font-size: 13px;
+// }
+
+//có tham số 
+@mixin styleText ($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleButton ($color,$bg-color,$border-color,$fs,$fw,$pd-x,$pd-y) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    font-size: $fs;
+    font-weight: $fw;
+    padding: $pd-y $pd-x;
+    cursor: pointer;
+}
+@mixin styleButtonHover ($color-hover,$bg-color-hover,$border-hover) {
+    color: $color-hover;
+    background-color: $bg-color-hover;
+    border: 1px solid $border-hover;
+}
+@mixin styleFormSearch ($bg-color, $bg-color-focus,  $boder-color-focus, $color-search, $color-search-hover) {
+    .input-group {
+        background-color: $bg-color;
+        .form-control {
+            background-color: transparent;
+            border-color: transparent;
+            color: $color-black-light;
+            box-shadow: none;
+            &::placeholder {
+                color: $color-black-light;
+            }
+            &:focus {
+                background-color: $bg-color-focus;
+                border-top-color: $boder-color-focus;
+                border-bottom-color: $boder-color-focus;
+                border-left-color: $boder-color-focus;
+                .input-group-append {
+                    .input-group-text {
+                        background-color: $bg-color-focus;
+                        border-right-color: $boder-color-focus;
+                    }
+                }
+                transition: none;
+            }
+            //+ lấy thẻ cùng cấp với nó
+            &:focus + .input-group-append {
+                .input-group-text {
+                    background-color: $bg-color-focus;
+                    border-top-color:  $boder-color-focus;
+                    border-bottom-color:  $boder-color-focus;
+                    border-right-color:  $boder-color-focus;
+                }
+            }
+        }
+        .input-group-append {
+            .input-group-text {
+                background-color: transparent;
+                border-color: transparent;
+                color: $color-search;
+                //& la parent selector
+                &:hover {
+                    color: $color-search-hover;
+                    background-color: $color-search;
+                }
+            }
+        }
+    }
+}

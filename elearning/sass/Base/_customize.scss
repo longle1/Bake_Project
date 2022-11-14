@@ -1,0 +1,23 @@
+.owl-nav {
+    button {
+        color: $color-blue-0 !important;
+        background-color: $color-white-0 !important;
+        width: 44px;
+        height: 44px;
+        border-radius: 50% !important;
+        box-shadow: 0 2px 8px 2px $color-black-1;
+        font-size: $fs-5 !important;
+        position: absolute;
+        top: 33%;
+        &.owl-prev {
+            left: -25px;
+        }
+        &.owl-next {
+            right: -25px;
+        }
+        &.owl-next:focus,
+        &.owl-prev:focus {
+            outline: none;
+        }
+    }
+}
